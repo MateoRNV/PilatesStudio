@@ -1,0 +1,23 @@
+{
+  "name": "bms-crm/bms-crm",
+  "description": "BMS Register",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "BMS"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BMS\\": "src/"
+    }
+  },
+  "require": {
+    "google/apiclient": "^2.12",
+    "nyholm/psr7": "^1.5",
+    "psr/http-server-handler": "^1.0",
+    "nyholm/psr7-server": "^1.0",
+    "vlucas/phpdotenv": "^5.4"
+  }
+}

@@ -1,0 +1,38 @@
+<?php
+
+use BMS\Controller\{Authenticate\Login,
+    Authenticate\LoginForm,
+    Authenticate\Logout,
+    CreateSteps\Amnese,
+    CreateSteps\Aparelhos,
+    CreateSteps\ClasseDor,
+    CreateSteps\Doencas,
+    CreateSteps\Dor,
+    CreateSteps\Queixas,
+    CreateSteps\Tratamento,
+    CreateUtente\SaveUtente,
+    CreateUtente\UpdateUtente,
+    Utentes\DeleteUtente,
+    Utentes\EditUtente,
+    Utentes\ListUtentes,
+    Utentes\ViewUtente};
+
+return [
+    '/login' => LoginForm::class,
+    '/' => ListUtentes::class,
+    '/login-post' => Login::class,
+    '/logout' => Logout::class,
+    '/add-new' => Amnese::class,
+    '/amnese' => Amnese::class,
+    '/queixas' => Queixas::class,
+    '/doencas' => Doencas::class,
+    '/amnese-por-aparelhos' => Aparelhos::class,
+    '/tratamentos-medicacao' => Tratamento::class,
+    '/dor' => Dor::class,
+    '/classes-dor' => ClasseDor::class,
+    '/save' => SaveUtente::class,
+    '/view' => ViewUtente::class,
+    '/edit' => EditUtente::class,
+    '/delete' => DeleteUtente::class,
+    '/update' => UpdateUtente::class,
+];
